@@ -29,7 +29,7 @@ const ListMenu = styled(List)(({ theme }) => ({
     },
 }));
 
-//rotas
+//routes
 const itemList = [
     {
       text: "Home",

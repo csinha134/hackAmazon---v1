@@ -74,6 +74,8 @@ const Header = () => {
               borderColor: "#14192d",
               color: "#fff",
               backgroundColor: "#14192d",
+              textDecoration:"none",
+              color:"inherit",
               "&&:hover": {
                 backgroundColor: "#343a55",
               },
@@ -82,11 +84,40 @@ const Header = () => {
               },
             }}
           >
-            sell now
+            <a href="/about" style={{ textDecoration: 'none', color: 'white' }}>
+            Recyle Now
+            </a>
+          </Button>
+          <Button
+            variant="contained"
+            sx={{
+              mr: 2,
+              px: 4,
+              py: 1,
+              fontSize: "0.9rem",
+              textTransform: "capitalize",
+              borderRadius: 0,
+              borderColor: "#14192d",
+              color: "#fff",
+              backgroundColor: "#14192d",
+              textDecoration:"none",
+              color:"inherit",
+              "&&:hover": {
+                backgroundColor: "#343a55",
+              },
+              "&&:focus": {
+                backgroundColor: "#343a55",
+              },
+            }}
+          >
+            <a href="/sellform" style={{ textDecoration: 'none', color: 'white' }}>
+            Sell Now
+            </a>
           </Button>
         </Box>
+        
       </BoxText>
-
+      
       <Box
         sx={(theme) => ({
           [theme.breakpoints.down("md")]: {
