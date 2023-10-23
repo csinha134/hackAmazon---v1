@@ -8,7 +8,8 @@ import Contact from './pages/Contact';
 //componentes
 import Navbar from './components/Navbar';
 import Footer from './components/Footer/Footer';
-import SellForm from "./components/SellForm"
+import SellForm from "./components/SellForm";
+import AddProduct from './components/AddProduct';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           {/* <Route path='/paper-and-cardboard-form' element={}/> */}
           <Route path='/sellform' element={<SellForm/>}/>
+          <Route path="/addproduct" element={<AddProduct />}/>
         </Routes>
       </BrowserRouter>
       {/* <Footer /> */}
