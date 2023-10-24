@@ -76,7 +76,7 @@ function ProductDetail() {
           <p>Material Used: {product.material_used.$numberInt}</p>
           <p>Carbon Emissions: {product.carbon_emissions}</p>
           <p>Seller Name: {product.Seller_Name}</p>
-          <p className="">Category: {product.Category}</p>
+          <p id="categoryID">Category: {product.Category}</p>
         </div>
       </div>
     </div>
