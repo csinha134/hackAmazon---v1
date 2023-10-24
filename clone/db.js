@@ -28,7 +28,7 @@ async function findProducts() {
 }
 async function findProductsbyID(id) {
   console.log(
-    "hellow"
+    "Testing"
   );
   const collection = database.collection('myProducts');
   const products = await collection.find({id:id}).toArray();

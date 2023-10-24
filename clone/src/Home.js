@@ -31,10 +31,10 @@ function Home() {
             <Product
               key={product.id}
               id={product.id}
-              title={product.title}
+              title={product.Title}
               price={product.price}
               rating={product.rating}
-              image={product.image}
+              image={product.photos}
             />
           ))}
         </div>
@@ -42,7 +42,7 @@ function Home() {
     }
     return rows;
   };
-
+  
   const [showCameraCapture, setShowCameraCapture] = useState(false);
   const handleUseCameraClick = () => {
     // Set the state variable to true to display the camera capture component

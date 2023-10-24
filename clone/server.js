@@ -20,7 +20,7 @@ app.get('/api/products', async (req, res) => {
 });
 app.get('/product/:id', async (req, res) => {
   const productId = req.params.id;
-
+  
   try {
     const database = await db.connectToDatabase();
     const products = await db.findProductsbyID(productId);

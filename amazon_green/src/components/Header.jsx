@@ -32,7 +32,7 @@ const Header = () => {
       paddingRight: theme.spacing(2),
     },
   }));
-
+  
   return (
     <CustomBox component="header">
       <br></br>
