@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import CameraCapture from "./CameraCapture";
+
 import axios from "axios";
 
 function Home() {
@@ -41,9 +43,26 @@ function Home() {
     return rows;
   };
 
+  const [showCameraCapture, setShowCameraCapture] = useState(false);
+  const handleUseCameraClick = () => {
+    // Set the state variable to true to display the camera capture component
+    setShowCameraCapture(true);
+  };
   return (
     <div className="home">
       <div className="home__container">
+      {showCameraCapture ? (
+        
+          <CameraCapture />
+        ) : (
+          <button
+  className="use-camera-button" // You can add a custom CSS class
+  onClick={handleUseCameraClick}
+>
+  Use Camera
+</button>
+
+        )}
         <img
           className="home__image"
           src="https://d8it4huxumps7.cloudfront.net/uploads/images/64fea624033ac_hackon-with-amazon-season-3.jpg?d=1920x1920"
