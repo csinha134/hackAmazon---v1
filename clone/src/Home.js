@@ -2,6 +2,7 @@ import React , {useState } from "react";
 import "./Home.css";
 import Product from "./Product";
 import CameraCapture from "./CameraCapture";
+import { Link } from "react-router-dom";
 
 
 function Home() {

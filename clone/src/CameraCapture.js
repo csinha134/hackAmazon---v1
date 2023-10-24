@@ -46,7 +46,7 @@ function CameraCapture() {
         }
       })
       .then(response => response.json())
-      .then(data => updateResults(data))
+      .then(data => console.log(data))
       .catch(error => console.error(error));
     });
   }, []);
