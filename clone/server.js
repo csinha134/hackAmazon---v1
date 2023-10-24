@@ -18,6 +18,17 @@ app.get('/api/products', async (req, res) => {
     res.status(500).json({ error: 'Error fetching products' });
   }
 });
+app.get('/product/:id', async (req, res) => {
+  const productId = req.params.id;
+
+  try {
+    const database = await db.connectToDatabase();
+    const products = await db.findProductsbyID(productId);
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ error: 'Error fetching product' });
+  }
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

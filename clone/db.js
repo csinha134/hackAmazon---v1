@@ -23,11 +23,20 @@ async function connectToDatabase() {
 async function findProducts() {
   const collection = database.collection('myProducts');
   const products = await collection.find({}).toArray();
+  // console.log(products);
+  return products;
+}
+async function findProductsbyID(id) {
+  console.log(
+    "hellow"
+  );
+  const collection = database.collection('myProducts');
+  const products = await collection.find({id:id}).toArray();
   console.log(products);
   return products;
 }
-
 module.exports = {
   connectToDatabase,
   findProducts,
+  findProductsbyID
 };

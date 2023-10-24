@@ -7,7 +7,7 @@
     "content_scripts": [{
       "css": ["styles.css"],
       "js": ["content-script.js"],
-      "matches": ["https://www.lateral.io/*","https://www.amazon.in/*"]
+      "matches": ["http://localhost:3000/*","https://www.amazon.in/*"]
     }]
 ,
 "host_permissions": ["https://*/*"],
