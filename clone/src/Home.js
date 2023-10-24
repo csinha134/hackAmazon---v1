@@ -2,7 +2,7 @@ import React , { useState, useEffect } from "react";
 import "./Home.css";
 import Product from "./Product";
 import CameraCapture from "./CameraCapture";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import axios from "axios";
 
 function Home() {
@@ -31,10 +31,15 @@ function Home() {
             <Product
               key={product.id}
               id={product.id}
+              brand={product.Brand}
               title={product.Title}
-              price={product.price}
               rating={product.rating}
+              price={product.price}
               image={product.photos}
+              materialUsed = {product.materialUsed}
+              carbonEmissions={product.carbonEmissions}
+              sellerName={product.sellerName}
+              about={product.about}
             />
           ))}
         </div>
