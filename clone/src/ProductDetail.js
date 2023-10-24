@@ -1,8 +1,24 @@
+import { useStateValue } from "./StateProvider";
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './ProductDetail.css'; // Import your CSS for styling
 
+
 function ProductDetail() {
+    const [{ basket }, dispatch] = useStateValue();
+    const addToBasket = () => {
+        // dispatch the item into the data layer
+        dispatch({
+          type: "ADD_TO_BASKET",
+          item: {
+            id:product.id,
+            title: product.title,
+            image: product.image,
+            price: product.price,
+            rating: product.rating,
+          },
+        });
+      };
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -35,7 +51,7 @@ function ProductDetail() {
         <img src={product.image} alt={product.title} />
       </div>
       <div className="product-detail__info">
-        <h1 className="product-detail__title">{product.title}</h1>
+        <h1 id= "productTitle" className="product-detail__title">{product.title}</h1>
         <p className="product-detail__price">${product.price}</p>
         <div className="product-detail__rating">
           {/* Example: Display star ratings here */}
@@ -47,10 +63,7 @@ function ProductDetail() {
             <span className="star"></span>
           </div>
         </div>
-        <p className="product-detail__description">
-          {/* Example: Add a product description here */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel quam eget ligula eleifend pellentesque.
-        </p>
+      
         <button className="product-detail__button">Add to Cart</button>
         <div className="product-detail__features">
           <h3>Product Features</h3>
@@ -61,39 +74,7 @@ function ProductDetail() {
           </ul>
         </div>
       </div>
-      <div className="product-detail__reviews">
-        <h2>Customer Reviews</h2>
-        {/* Example: Display customer reviews and ratings */}
-        <div className="review">
-          <div className="review__rating">
-            <div className="star-rating">
-              <span className="star"></span>
-              <span className="star"></span>
-              <span className="star"></span>
-              <span className="star"></span>
-              <span className="star"></span>
-            </div>
-          </div>
-          <p className="review__text">
-            A great product! I'm very satisfied with my purchase.
-          </p>
-        </div>
-        <div className="review">
-          <div className="review__rating">
-            <div className="star-rating">
-              <span className="star"></span>
-              <span className="star"></span>
-              <span className="star"></span>
-              <span className="star"></span>
-              <span className="star"></span>
-            </div>
-          </div>
-          <p className="review__text">
-            This product exceeded my expectations. Highly recommended.
-          </p>
-        </div>
-        {/* Add more reviews and styling as needed */}
-      </div>
+      
     </div>
   );
 }
