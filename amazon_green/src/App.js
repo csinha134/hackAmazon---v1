@@ -1,4 +1,4 @@
-import React from'react';
+import React from 'react';
 //rotas
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 //pages
@@ -20,7 +20,6 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          {/* <Route path='/paper-and-cardboard-form' element={}/> */}
           <Route path='/sellform' element={<SellForm/>}/>
           <Route path="/addproduct" element={<AddProduct />}/>
         </Routes>
