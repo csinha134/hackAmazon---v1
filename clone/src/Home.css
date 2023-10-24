@@ -1,42 +1,40 @@
+/* Home.css */
 .home {
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 100%;
 }
 
 .home__row {
   display: flex;
   z-index: -11;
-  margin-left: 5px;
-  margin-right: 5px;
-
+  margin: 0 5px;
 }
-
 
 .home__image {
   width: 100%;
   z-index: -1;
   margin-bottom: -150px;
-
 }
-/* In Home.css or a separate CSS file */
+
 .use-camera-button {
-  background-color: #ff9900; /* Amazon's orange color */
-  color: white;
+  background-color: #0073e6;
+  color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 18px;
   transition: background-color 0.3s;
 
-  /* Apply Amazon's button styling */
-  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  /* Center horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .use-camera-button:hover {
-  background-color: #ffad33; /* Slightly lighter orange on hover */
+  background-color: #005bb0;
 }
-
