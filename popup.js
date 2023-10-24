@@ -11,7 +11,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     const tabUrl = tab.url;
     console.log("Tab URL:", tabUrl); // Log the tab URL to verify it.
 
-    if (tabUrl.includes("amazon.in")) {
+    // if (tabUrl.includes("amazon.in")) {
         let productName;
         let producePrice;
         chrome.scripting.executeScript(
@@ -37,7 +37,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             }
         );
 
-    }
+    // }
 });
 
 function scrapeAmazonProductName() {

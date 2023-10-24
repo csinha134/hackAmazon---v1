@@ -30,10 +30,10 @@ function Home() {
             <Product
               key={product.id}
               id={product.id}
-              title={product.title}
+              title={product.Title}
               price={product.price}
               rating={product.rating}
-              image={product.image}
+              image={product.photos}
             />
           ))}
         </div>

@@ -6,7 +6,7 @@
     "permissions": ["activeTab","scripting","tabs","http://*/*","https://*/*"],
     "content_scripts": [{
       "js": ["content-script.js"],
-      "matches": ["http://localhost:3000/*","https://www.amazon.in/*"]
+      "matches": ["<all_urls>"]
     }]
 ,
 "host_permissions": ["https://*/*"],

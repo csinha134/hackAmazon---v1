@@ -6,11 +6,6 @@ import "./Product.css";
 
 function ProductDetail() {
     const [{ basket }, dispatch] = useStateValue();
-    const random = Math.random();
-
-    // Determine whether to display 4 or 5 stars
-    const rating = random < 0.5 ? 4 : 5;
-    
     const addToBasket = () => {
         // dispatch the item into the data layer
         dispatch({
@@ -20,6 +15,7 @@ function ProductDetail() {
             title: product.Title,
             image: product.photos,
             price: product.price,
+            rating: product.rating,
             // materialUsed : product.materialUsed,
             // carbonEmissions:product.carbonEmissions,
             // sellerName:product.sellerName,
@@ -53,35 +49,36 @@ function ProductDetail() {
     return <div>Product not found</div>;
   }
   
+  const rating = parseFloat(product.Ratings);
+
   return (
     <div className="product-detail">
       <div className="product-detail__image">
         <img src={product.photos} alt={product.Title} />
       </div>
       <div className="product-detail__info">
-        <h1 id= "productTitle" className="product-detail__title">{product.Title}</h1>
-        <p className="product-detail__price"> ₹{product.price}</p>
-        <div className="product-detail__rating">
-          {/* Example: Display star ratings here */}
-          <div className="star-rating">
-         
-          </div>
-        </div>
-      
+        <h1 id="productTitle" className="product-detail__title">
+          {product.Title}
+        </h1>
+        <p className="product-detail__price">₹{product.price}</p>
+        
         <button onClick={addToBasket}>Add to Basket</button>
         <div className="product-detail__features">
           <h3>Product Features</h3>
-          <div className="product__rating">
-      {Array(rating)
-        .fill()
-        .map((_, i) => (
-          <p key={i}>🌟</p>
-        ))}
-    </div>
-          <p > {product.about}</p>
+          <p>{product.about}</p>
+        </div>
+        <div className="product-detail__additional-info">
+          <h3>Additional Information</h3>
+          <p>Brand: {product.Brand}</p>
+          <p>Color: {product.color}</p>
+          <p>Size: {product.size}</p>
+          <p>Weight (gm): {product["weight(gm)"].$numberInt}</p>
+          <p>Material Used: {product.material_used.$numberInt}</p>
+          <p>Carbon Emissions: {product.carbon_emissions}</p>
+          <p>Seller Name: {product.Seller_Name}</p>
+          <p className="">Category: {product.Category}</p>
         </div>
       </div>
-      
     </div>
   );
 }
