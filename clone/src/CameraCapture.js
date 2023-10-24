@@ -38,7 +38,7 @@ function CameraCapture() {
       const dataURL = canvas.toDataURL('image/jpeg');
 
       // Send the image data to the server using the fetch API
-      fetch('http://localhost:5000/process_image', {
+      fetch('http://13.126.106.140:5000/process_image', {
         method: 'POST',
         body: dataURL, // Send the image data as the request body
         headers: {
