@@ -1,0 +1,86 @@
+/* styles.css */
+
+.background-image {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 1985/803;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+  
+  .homepage-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem 0;
+    background: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background */
+    border-radius: 10px;
+  }
+  
+  .amazon-logo {
+    width: 200px; /* Adjust the logo width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .homepage-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-top: 2rem;
+  }
+  
+  .homepage-description {
+    font-size: 1.5rem;
+    color: #555; /* Slightly darker text color */
+    margin-top: 1rem;
+  }
+  .chatbot-container {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width if desired */
+    margin: 2rem auto; /* Center the div horizontally and add space around it */
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+    border-radius: 10px;
+  }
+  .hompage-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .homepage__nav-inverse-btn {
+    background: #ff9900; /* Amazon's signature orange color */
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .homepage-container {
+      width: 90%;
+    }
+  
+    .amazon-logo {
+      width: 150px; /* Adjust the logo width for smaller screens */
+    }
+  
+    .homepage-title {
+      font-size: 2rem;
+    }
+  
+    .homepage-description {
+      font-size: 1.2rem;
+    }
+  
+    .hompage-button-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
