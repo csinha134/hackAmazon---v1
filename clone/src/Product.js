@@ -2,9 +2,13 @@ import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
 import { Link } from "react-router-dom"; 
-function Product({ id, title, image, price, rating}) {
+function Product({ id, title, image, price}) {
   const [{ basket }, dispatch] = useStateValue();
+  // const randomRating = Math.floor(Math.random() * 5) + 1;
+  const random = Math.random();
 
+  // Determine whether to display 4 or 5 stars
+  const rating = random < 0.5 ? 4 : 5;
   const addToBasket = () => {
     // dispatch the item into the data layer
     dispatch({
@@ -14,7 +18,6 @@ function Product({ id, title, image, price, rating}) {
         title: title,
         image: image,
         price: price,
-        rating: rating,
       },
     });
   };
@@ -31,12 +34,12 @@ function Product({ id, title, image, price, rating}) {
           <strong>{price}</strong>
         </p>
         <div className="product__rating">
-          {Array(rating)
-            .fill()
-            .map((_, i) => (
-              <p>🌟</p>
-            ))}
-        </div>
+      {Array(rating)
+        .fill()
+        .map((_, i) => (
+          <p key={i}>🌟</p>
+        ))}
+    </div>
       </div>
 
       <img src={image} alt="" />
