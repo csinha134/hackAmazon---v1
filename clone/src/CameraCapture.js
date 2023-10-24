@@ -1,6 +1,5 @@
 import React, { useState,useEffect, useRef} from 'react';
 import Webcam from 'react-webcam';
-import axios from "axios";
 
 const containerStyle = {
   textAlign: 'center',
@@ -79,13 +78,11 @@ function CameraCapture() {
       <button id="capture-button" style={buttonStyle}>
         Capture Image - Detect Recommended From Dataset ( Without ChatGPT )
       </button>
+      
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button id="capture-button"  style={buttonStyle}>
-        Search on ChatGPT
-      </button>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button className="capture-button">
-          <a href="https://amazon-green-recycle.streamlit.app/" target="blank" style={{textDecoration:"none", color:"white"}}>Recycle Value Calculator</a>
+      <button id="capture-button" style={buttonStyle}>
+
+          <a href="https://amazon-green-recycle.streamlit.app/" style={{colorç:"white"}} target="blank">Recycle Value Calculator</a>
         </button>
    </div>
       <div id="results" style={resultsStyle}>
