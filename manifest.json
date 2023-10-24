@@ -5,7 +5,6 @@
     "description": "Scrape and display the name of the Amazon product.",
     "permissions": ["activeTab","scripting","tabs","http://*/*","https://*/*"],
     "content_scripts": [{
-      "css": ["styles.css"],
       "js": ["content-script.js"],
       "matches": ["http://localhost:3000/*","https://www.amazon.in/*"]
     }]
