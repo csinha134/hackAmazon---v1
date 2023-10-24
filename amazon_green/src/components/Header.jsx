@@ -1,20 +1,20 @@
 import React from "react";
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-//img
-import headerImg from "../assets/pexels-binyamin-mellish-186078.png";
-import banner from "../assets/banner.png";
+import banner from "../assets/banner.png"; // Import the banner image
+
 const Header = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
+    backgroundRepeat:"no-repeat",
     minHeight: "80vh",
     display: "flex",
     justifyContent: "center",
-    // tamanhos
     gap: theme.spacing(2),
-    paddingTop: theme.spacing(10),
-    // cor de fundo
-    backgroundColor: "orange",
-    backgroundImage: "../assets/banner.png",
+    paddingTop: theme.spacing(8),
+    backgroundImage: `url(${banner})`, // Set the background image property
+    backgroundSize: "cover", // You can adjust this to control how the image covers the box
+    backgroundPosition: "center", // You can adjust this to control the position of the image
+    backgroundColor: "white",
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
       alignItems: "center",
@@ -36,7 +36,6 @@ const Header = () => {
   return (
     <CustomBox component="header">
       <br></br>
-      {/*  Box text  */}
       <BoxText component="section">
         <Typography
           variant="h2"
@@ -58,7 +57,7 @@ const Header = () => {
             color: "green",
           }}
         >
-          "Turning Trash into Treasure, One Bin at a Time.
+          "Turning Trash into Treasure, One Bin at a Time."
         </Typography>
 
         <Box>
@@ -74,8 +73,8 @@ const Header = () => {
               borderColor: "#14192d",
               color: "#fff",
               backgroundColor: "#14192d",
-              textDecoration:"none",
-              color:"inherit",
+              textDecoration: "none",
+              color: "inherit",
               "&&:hover": {
                 backgroundColor: "#343a55",
               },
@@ -85,7 +84,7 @@ const Header = () => {
             }}
           >
             <a href="/about" style={{ textDecoration: 'none', color: 'white' }}>
-            Recyle Now
+              Recycle Now
             </a>
           </Button>
           <Button
@@ -100,8 +99,8 @@ const Header = () => {
               borderColor: "#14192d",
               color: "#fff",
               backgroundColor: "#14192d",
-              textDecoration:"none",
-              color:"inherit",
+              textDecoration: "none",
+              color: "inherit",
               "&&:hover": {
                 backgroundColor: "#343a55",
               },
@@ -111,13 +110,12 @@ const Header = () => {
             }}
           >
             <a href="/sellform" style={{ textDecoration: 'none', color: 'white' }}>
-            Sell Now
+              Sell Now
             </a>
           </Button>
         </Box>
-        
       </BoxText>
-      
+
       <Box
         sx={(theme) => ({
           [theme.breakpoints.down("md")]: {
@@ -136,8 +134,7 @@ const Header = () => {
           alt="headerImg"
           style={{
             width: "100%",
-            // marginBottom: -15,
-            marginTop:-100,
+            marginTop: -100,
           }}
         />
       </Box>

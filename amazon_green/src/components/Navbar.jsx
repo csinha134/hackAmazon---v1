@@ -65,7 +65,7 @@ const Navbar = () => {
                 >
                     HBSales
                 </Typography> */}
-                <img src={logo} width="8%" height="auto" className="App-logo" alt="logo" />
+                <img src={logo} width="10%" height="auto" className="App-logo" alt="logo" />
                 <Box sx={{display: { xs: 'block', sm: 'none' } }}>
                     <DrawerItem /> 
                 </Box>
