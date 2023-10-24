@@ -33,7 +33,7 @@ def calculate_sustainability_index_json():
 
 @app.route('/query_records/json/<category>/', methods=['GET'])
 def query_records_json(category):
-  url = "http://localhost:8888/api/products"
+  url = "http://3.110.182.215:8888/api/products"
   response = requests.get(url)
   json_data = response.json()
   # print(json_data)

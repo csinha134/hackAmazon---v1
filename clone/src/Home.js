@@ -10,7 +10,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:8888/api/products")
+    axios.get("http://3.110.182.215:8888/api/products")
       .then((response) => {
         setProducts(response.data);
         setLoading(false);

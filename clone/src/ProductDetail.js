@@ -29,7 +29,7 @@ function ProductDetail() {
   
   useEffect(() => {
     // Fetch product details from your API or database
-    fetch(`http://localhost:8888/product/${id}`)
+    fetch(`http://3.110.182.215:8888/product/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setProduct(data[0]);
