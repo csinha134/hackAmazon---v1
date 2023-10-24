@@ -9,33 +9,77 @@ import {
 
 export default function App() {
   return (
-    <form>
-      <MDBRow className='mb-4'>
-        <MDBCol>
-          <MDBInput id='form6Example1' label='First name' />
-        </MDBCol>
-        <MDBCol>
-          <MDBInput id='form6Example2' label='Last name' />
-        </MDBCol>
-      </MDBRow>
+    <div>
+      <style jsx>{`
+      /* Center the form */
+      .form-container {
+        margin: 0 auto;
+        width: 50%;
+      }
 
-      <MDBInput wrapperClass='mb-4' id='form6Example3' label='Company name' />
-      <MDBInput wrapperClass='mb-4' id='form6Example4' label='Address' />
-      <MDBInput wrapperClass='mb-4' type='email' id='form6Example5' label='Email' />
-      <MDBInput wrapperClass='mb-4' type='tel' id='form6Example6' label='Phone' />
+      /* Beautify the form */
+      .form-container {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #fff;
+      }
 
-      <MDBInput wrapperClass='mb-4' textarea id='form6Example7' rows={4} label='Additional information' />
+      .form-container input,
+      .form-container textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 16px;
+      }
 
-      <MDBCheckbox
-        wrapperClass='d-flex justify-content-center mb-4'
-        id='form6Example8'
-        label='Create an account?'
-        defaultChecked
-      />
+      .form-container button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
 
-      <MDBBtn className='mb-4' type='submit' block>
-        Place order
-      </MDBBtn>
-    </form>
+      .form-container h2 {
+        text-align: center;
+      }
+    `}</style>
+
+      <div className="form-container">
+        <h2>Contact Us</h2>
+        <form>
+          <MDBRow className='mb-4'>
+            <MDBCol>
+              <MDBInput id='firstName' label='First name' />
+            </MDBCol>
+            <MDBCol>
+              <MDBInput id='lastName' label='Last name' />
+            </MDBCol>
+          </MDBRow>
+
+          <MDBInput wrapperClass='mb-4' id='companyName' label='Company name' />
+          <MDBInput wrapperClass='mb-4' id='address' label='Address' />
+          <MDBInput wrapperClass='mb-4' type='email' id='email' label='Email' />
+          <MDBInput wrapperClass='mb-4' type='tel' id='phone' label='Phone' />
+
+          <MDBInput wrapperClass='mb-4' textarea id='additionalInformation' rows={4} label='Additional information' />
+
+          <MDBCheckbox
+            wrapperClass='d-flex justify-content-center mb-4'
+            id='createAccount'
+            label='Create an account?'
+            defaultChecked
+          />
+
+          <MDBBtn className='mb-4' type='submit' block>
+            Submit
+          </MDBBtn>
+        </form>
+      </div>
+    </div>
   );
 }
