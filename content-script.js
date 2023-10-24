@@ -27,7 +27,7 @@ function createProductListing() {
     const parts = text.split(":");
     const category = parts[parts.length-1].trim(); // Trim to remove leading/trailing whitespace
 
-    fetch(`http://127.0.0.1:7777/query_records/json/${category}`)
+    fetch(`http://3.110.182.215:7777/query_records/json/${category}`)
       .then((response) => response.json())
       .then((data) => {
         var jsonData = JSON.parse(data);
