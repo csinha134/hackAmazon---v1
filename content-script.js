@@ -1,5 +1,5 @@
 const box = document.createElement("div");
-box.style.width = "600px";
+box.style.width = "400px";
 box.style.height = "300px";
 box.style.backgroundColor = "#FFF";  // White background
 box.style.overflow = "auto";
