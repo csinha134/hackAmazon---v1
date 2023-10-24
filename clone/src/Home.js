@@ -50,6 +50,7 @@ function Home() {
   return (
     <div className="home">
       <div className="home__container">
+    
         {showCameraCapture ? (
           <CameraCapture />
         ) : (
@@ -57,6 +58,7 @@ function Home() {
             Use Camera
           </button></center>
         )}
+        
         <img
           className="home__image"
           src="https://d8it4huxumps7.cloudfront.net/uploads/images/64fea624033ac_hackon-with-amazon-season-3.jpg?d=1920x1920"

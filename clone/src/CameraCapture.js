@@ -1,10 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState,useEffect, useRef} from 'react';
 import Webcam from 'react-webcam';
+import axios from "axios";
+
 const containerStyle = {
   textAlign: 'center',
   maxWidth: '600px',
   margin: '0 auto',
 };
+
 
 const buttonStyle = {
   backgroundColor: '#007BFF',
@@ -32,19 +35,16 @@ function CameraCapture() {
       console.log(data);
       const responseElement = document.getElementById('response');
   if (responseElement) {
-    responseElement.textContent = data.name; // You can also use innerHTML if you need HTML content
+    responseElement.textContent = data.name;
+    console.log(data.name); // You can also use innerHTML if you need HTML content
   }
-    
   const imageElement = document.getElementById('processed-image');
   if (imageElement) {
     const base64Image = `data:image/jpeg;base64, ${data.image_base64}`;
     imageElement.src = base64Image;
   }
-    
-    
     }
     
-
     const captureButton = document.getElementById('capture-button');
 
     // Capture an image when the "Capture" button is clicked
@@ -52,7 +52,7 @@ function CameraCapture() {
       const imageSrc = webcamRef.current.getScreenshot();
 
       // Send the image data to the server using the fetch API
-      fetch('http://localhost:5000/process_image', {
+      fetch('http://52.66.73.181:5000/process_image', {
         method: 'POST',
         body: imageSrc, // Send the image data as the request body
         headers: {
@@ -65,6 +65,7 @@ function CameraCapture() {
     });
   }, []);
 
+
   return (
        <div style={containerStyle}>
       <h1>Camera Capture</h1>
@@ -74,9 +75,19 @@ function CameraCapture() {
         ref={webcamRef}
         screenshotFormat="image/jpeg"
       />
+      <div style={{display:"flex"}}>
       <button id="capture-button" style={buttonStyle}>
         Capture Image - Detect Recommended From Dataset ( Without ChatGPT )
       </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button id="capture-button"  style={buttonStyle}>
+        Search on ChatGPT
+      </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button className="capture-button">
+          <a href="https://amazon-green-recycle.streamlit.app/" target="blank" style={{textDecoration:"none", color:"white"}}>Recycle Value Calculator</a>
+        </button>
+   </div>
       <div id="results" style={resultsStyle}>
         <img id="processed-image" src="" alt="Processed Image" style={imgStyle} />
         <p id="response">RESULT placeholder</p>
@@ -84,4 +95,5 @@ function CameraCapture() {
     </div>
   );
 }
-export default CameraCapture
+
+export default CameraCapture;
