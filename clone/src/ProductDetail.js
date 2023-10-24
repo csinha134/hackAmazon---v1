@@ -6,6 +6,11 @@ import "./Product.css";
 
 function ProductDetail() {
     const [{ basket }, dispatch] = useStateValue();
+    const random = Math.random();
+
+    // Determine whether to display 4 or 5 stars
+    const rating = random < 0.5 ? 4 : 5;
+    
     const addToBasket = () => {
         // dispatch the item into the data layer
         dispatch({
@@ -15,7 +20,6 @@ function ProductDetail() {
             title: product.Title,
             image: product.photos,
             price: product.price,
-            rating: product.rating,
             // materialUsed : product.materialUsed,
             // carbonEmissions:product.carbonEmissions,
             // sellerName:product.sellerName,
@@ -60,18 +64,20 @@ function ProductDetail() {
         <div className="product-detail__rating">
           {/* Example: Display star ratings here */}
           <div className="star-rating">
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
+         
           </div>
         </div>
       
         <button onClick={addToBasket}>Add to Basket</button>
         <div className="product-detail__features">
           <h3>Product Features</h3>
-
+          <div className="product__rating">
+      {Array(rating)
+        .fill()
+        .map((_, i) => (
+          <p key={i}>🌟</p>
+        ))}
+    </div>
           <p > {product.about}</p>
         </div>
       </div>
