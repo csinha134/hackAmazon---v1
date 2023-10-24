@@ -60,4 +60,4 @@ def query_records_json(category):
   return jsonify(json_data)
 
 if __name__ == '__main__':
-  app.run(debug=True,port=7777)
+  app.run(debug=True,host="0.0.0.0",port=7777)
