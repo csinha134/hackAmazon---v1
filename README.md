@@ -9,8 +9,9 @@
 ![8](https://github.com/arjundvn24/hackAmazon/assets/71541766/0a894bc9-5a66-48a6-a8cc-adaff6ffdc3d)
 
 ![9](https://github.com/arjundvn24/hackAmazon/assets/71541766/00832d35-8b2d-4216-bdcd-2996b64638a8)
-![10](https://github.com/arjundvn24/hackAmazon/assets/71541766/a155d318-ab97-45ca-935f-c41ff059df67)
-![11](https://github.com/arjundvn24/hackAmazon/assets/71541766/47bde35d-2b11-4245-895d-2ec81265dbd4)
+
+![Untitled Notebook-6](https://github.com/arjundvn24/hackAmazon/assets/71541766/2d4b275b-d3d9-4940-a3d2-fc230a33ad1a)
+
 ![12](https://github.com/arjundvn24/hackAmazon/assets/71541766/c8bdc5e2-d294-4321-abb4-60111b3e92fa)
 ![13](https://github.com/arjundvn24/hackAmazon/assets/71541766/b75510bd-d505-44f7-a40d-fde2150c3a3a)
 ![14](https://github.com/arjundvn24/hackAmazon/assets/71541766/4e75be02-97f3-4857-9810-7c5b10481607)
