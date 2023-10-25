@@ -34,6 +34,11 @@ Check out the [Deployed Version](http://43.204.19.152:3000/) of the project to i
 
 Explore the [Documentation](https://app.gitbook.com/o/1aqUfxq0bAnZN6mulnf1/s/AlnoJHGrXy7l91v6HLwH/) for detailed information on how to use, configure, and contribute to the project.
 
+# PDF Documentation
+
+Download the [PDF Documentation](https://drive.google.com/file/d/1rANX3TfqNVHviZ8Epdbm63qqTj40VF3p/view?usp=sharing) for offline access to detailed project information.
+
+
 ## Installation
 
 Explain how to install or set up your project. Include any necessary steps, dependencies, and configurations.
