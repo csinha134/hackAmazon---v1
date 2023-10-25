@@ -9,7 +9,12 @@
 
 ## Description
 
-Provide a brief and informative description of your project. Explain its purpose, key features, and why it's valuable.
+Users can search for sustainable products by inputting the name or using images. OpenCV scans and
+suggests alternatives.
+Users are rewarded with incentives, like Amazon stars, for choosing sustainable options.
+For selling, the product must be originally purchased from Amazon for this Prototype.
+Data is retrieved from the user's order history. After selecting options, users receive a collection date for
+nearby community pickup.
 
 ## Video Demo (YouTube)
 
