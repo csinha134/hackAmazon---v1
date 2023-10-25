@@ -20,6 +20,10 @@ nearby community pickup.
 
 [Watch a Video Demo](https://www.youtube.com/your-video-link) of the project to see it in action.
 
+## Deployed Version
+
+Check out the [Deployed Version]([https://your-deployed-link.com](http://43.204.19.152:3000/)) of the project to interact with it live.
+
 ## Documentation (GitBook)
 
 Explore the [Documentation](https://app.gitbook.com/o/1aqUfxq0bAnZN6mulnf1/s/AlnoJHGrXy7l91v6HLwH/) for detailed information on how to use, configure, and contribute to the project.
