@@ -1,9 +1,13 @@
 # Amazon Green
 
 <p align="center">
+  
 ![green](https://github.com/arjundvn24/hackAmazon/assets/71541766/ad7133f1-d92d-4ad1-926d-98e55d58ff8a)
+
 </p>
-![green](https://github.com/arjundvn24/hackAmazon/assets/71541766/ad7133f1-d92d-4ad1-926d-98e55d58ff8a)
+
+
+
 
 
 
