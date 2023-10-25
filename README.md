@@ -1,4 +1,4 @@
-# Project Name
+# Amazon Green
 
 <p align="center">
   <img src="logo.png" width="200">
@@ -14,7 +14,7 @@ Provide a brief and informative description of your project. Explain its purpose
 
 ## Documentation (GitBook)
 
-Explore the [Documentation](https://www.gitbook-link.com) for detailed information on how to use, configure, and contribute to the project.
+Explore the [Documentation](https://app.gitbook.com/o/1aqUfxq0bAnZN6mulnf1/s/AlnoJHGrXy7l91v6HLwH/) for detailed information on how to use, configure, and contribute to the project.
 
 ## Installation
 
@@ -24,14 +24,13 @@ Explain how to install or set up your project. Include any necessary steps, depe
 
 Provide instructions on how to use the project, including code examples, commands, or sample usage scenarios.
 
-## Contributing
-
-We welcome contributions from the community to make this project better. If you'd like to contribute, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
 ### Contributors
 
-- [Contributor 1](https://github.com/contributor1)
-- [Contributor 2](https://github.com/contributor2)
+- [Chayan Sinha](https://github.com/csinha134)
+- [Rudransh Bansal](https://github.com/rudranshbansal)
+- [Kartik Srivastava](https://github.com/KARTIK5667)
+- [Arjun Dhawan](https://github.com/arjundvn24)
 
 
 
