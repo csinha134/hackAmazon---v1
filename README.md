@@ -22,9 +22,9 @@ For selling, the product must be originally purchased from Amazon for this Proto
 Data is retrieved from the user's order history. After selecting options, users receive a collection date for
 nearby community pickup.
 
-## Video Demo (YouTube)
+## Video Demo (Gitbook)
 
-[Watch a Video Demo](https://www.youtube.com/your-video-link) of the project to see it in action.
+Kindly refer to the gitbook for the videos of each use case as well [Gitbook](https://app.gitbook.com/o/1aqUfxq0bAnZN6mulnf1/s/AlnoJHGrXy7l91v6HLwH/)
 
 ## Deployed Version
 
