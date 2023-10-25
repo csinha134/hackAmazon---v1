@@ -1,4 +1,12 @@
-# hackAmazon
+# Amazon Green
+
+<p align="center">
+  ![green](https://github.com/arjundvn24/hackAmazon/assets/71541766/15460218-7f39-4ce9-9231-d6c96a71535b)
+</p>
+
+## Description
+
+Provide a brief description of your project here.
 ![1](https://github.com/arjundvn24/hackAmazon/assets/71541766/ea00b0da-5cb9-4b99-ad73-5da58f048cf6)
 ![2](https://github.com/arjundvn24/hackAmazon/assets/71541766/e999a9eb-3a27-455e-92f4-59c3e53c6ac6)
 ![3](https://github.com/arjundvn24/hackAmazon/assets/71541766/617dd1f8-222a-4668-b9b0-11b92e9ddca7)
