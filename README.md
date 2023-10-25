@@ -1,9 +1,5 @@
 # Amazon Green
 
-<p align="center">
-  ![green](https://github.com/arjundvn24/hackAmazon/assets/71541766/15460218-7f39-4ce9-9231-d6c96a71535b)
-</p>
-
 ## Description
 
 Provide a brief description of your project here.
