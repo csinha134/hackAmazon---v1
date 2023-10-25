@@ -1,59 +1,67 @@
-# Amazon Green
+---
+description: Solution of Amazon Hackon 2023 by Team BitLock
+cover: .gitbook/assets/banner.png
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
 
-<p align="center">
-  
-![green](https://github.com/arjundvn24/hackAmazon/assets/71541766/ad7133f1-d92d-4ad1-926d-98e55d58ff8a)
+# 👋 Welcome to Amazon Green
 
-</p>
+## Overview
 
+{% content-ref url="overview/tools-and-technologies-used.md" %}
+[tools-and-technologies-used.md](overview/tools-and-technologies-used.md)
+{% endcontent-ref %}
 
+{% content-ref url="schematic-design-flowchart.md" %}
+[schematic-design-flowchart.md](schematic-design-flowchart.md)
+{% endcontent-ref %}
 
+{% content-ref url="consistency-and-scalability.md" %}
+[consistency-and-scalability.md](consistency-and-scalability.md)
+{% endcontent-ref %}
 
-
-
-
-
-## Description
-
-Users can search for sustainable products by inputting the name or using images. OpenCV scans and
-suggests alternatives.
-Users are rewarded with incentives, like Amazon stars, for choosing sustainable options.
-For selling, the product must be originally purchased from Amazon for this Prototype.
-Data is retrieved from the user's order history. After selecting options, users receive a collection date for
-nearby community pickup.
-
-## Video Demo (YouTube)
-
-[Watch a Video Demo](https://www.youtube.com/your-video-link) of the project to see it in action.
-
-## Deployed Version
-
-Check out the [Deployed Version](http://43.204.19.152:3000/) of the project to interact with it live.
-
-## Documentation (GitBook)
-
-Explore the [Documentation](https://app.gitbook.com/o/1aqUfxq0bAnZN6mulnf1/s/AlnoJHGrXy7l91v6HLwH/) for detailed information on how to use, configure, and contribute to the project.
-
-# PDF Documentation
-
-Download the [PDF Documentation](https://drive.google.com/file/d/1rANX3TfqNVHviZ8Epdbm63qqTj40VF3p/view?usp=sharing) for offline access to detailed project information.
-
+{% content-ref url="plug-n-play-architecture.md" %}
+[plug-n-play-architecture.md](plug-n-play-architecture.md)
+{% endcontent-ref %}
 
 ## Installation
 
-Explain how to install or set up your project. Include any necessary steps, dependencies, and configurations.
+We have put together a helpful guide to help you get set up with our solution quickly and easily
 
-## Usage
+{% content-ref url="installation/getting-set-up.md" %}
+[getting-set-up.md](installation/getting-set-up.md)
+{% endcontent-ref %}
 
-Provide instructions on how to use the project, including code examples, commands, or sample usage scenarios.
+## Use Cases
 
+Details about specific Use Cases and their working
 
-### Contributors
+{% content-ref url="use-cases/scan-for-sustainable-alternatives-use-case-1.md" %}
+[scan-for-sustainable-alternatives-use-case-1.md](use-cases/scan-for-sustainable-alternatives-use-case-1.md)
+{% endcontent-ref %}
 
-- [Chayan Sinha](https://github.com/csinha134)
-- [Rudransh Bansal](https://github.com/rudranshbansal)
-- [Kartik Srivastava](https://github.com/KARTIK5667)
-- [Arjun Dhawan](https://github.com/arjundvn24)
+{% content-ref url="eco-chatter-use-case-2.md" %}
+[eco-chatter-use-case-2.md](eco-chatter-use-case-2.md)
+{% endcontent-ref %}
 
+{% content-ref url="extension-towards-a-greener-amazon-use-case-3.md" %}
+[extension-towards-a-greener-amazon-use-case-3.md](extension-towards-a-greener-amazon-use-case-3.md)
+{% endcontent-ref %}
 
-
+{% content-ref url="prioritized-sustainable-and-recyclable-products-use-case-4.md" %}
+[prioritized-sustainable-and-recyclable-products-use-case-4.md](prioritized-sustainable-and-recyclable-products-use-case-4.md)
+{% endcontent-ref %}
