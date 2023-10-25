@@ -28,7 +28,7 @@ Kindly refer to the gitbook for the videos of each use case as well [Gitbook](ht
 
 ## Deployed Version
 
-Check out the [Deployed Version](http://43.204.19.152:3000/) of the project to interact with it live.
+Check out the [Deployed Version](http://13.233.151.137:3000/) of the project to interact with it live.
 
 ## Documentation (GitBook)
 
