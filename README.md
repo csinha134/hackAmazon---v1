@@ -24,7 +24,7 @@ nearby community pickup.
 
 ## Video Demo (Gitbook)
 
-Kindly refer to the gitbook for the videos of each use case as well [Gitbook](https://app.gitbook.com/o/1aqUfxq0bAnZN6mulnf1/s/AlnoJHGrXy7l91v6HLwH/)
+Kindly refer to the gitbook for the videos of each use case as well [Gitbook](https://app.gitbook.com/invite/1aqUfxq0bAnZN6mulnf1/CkAInj4mHhFubFWbMOq4)
 
 ## Deployed Version
 
@@ -32,7 +32,7 @@ Check out the [Deployed Version](http://43.204.19.152:3000/) of the project to i
 
 ## Documentation (GitBook)
 
-Explore the [Documentation](https://app.gitbook.com/o/1aqUfxq0bAnZN6mulnf1/s/AlnoJHGrXy7l91v6HLwH/) for detailed information on how to use, configure, and contribute to the project.
+Explore the [Documentation](https://app.gitbook.com/invite/1aqUfxq0bAnZN6mulnf1/CkAInj4mHhFubFWbMOq4) for detailed information on how to use, configure, and contribute to the project.
 
 # PDF Documentation
 
