@@ -1,7 +1,8 @@
 # Amazon Green
 
 <p align="center">
-  <img src="logo.png" width="200">
+  ![green](https://github.com/arjundvn24/hackAmazon/assets/71541766/fe2a7605-bfeb-42a4-a73d-d6779e375f08)
+
 </p>
 
 ## Description
