@@ -39,9 +39,65 @@ Explore the [Documentation](https://bitlock-1.gitbook.io/amazon-hackon-2023-team
 Download the [PDF Documentation](https://drive.google.com/file/d/1rANX3TfqNVHviZ8Epdbm63qqTj40VF3p/view?usp=sharing) for offline access to detailed project information.
 
 
-## Installation
+# Read Me - Installation Guide
 
-Explain how to install or set up your project. Include any necessary steps, dependencies, and configurations.
+This document provides step-by-step instructions for setting up and running both the frontend and backend components of your application. Make sure to follow these steps in the order provided to ensure a successful installation.
+
+## Prerequisites
+Before proceeding with the installation, make sure you have the following prerequisites installed on your system:
+
+- Node.js: [Download and install Node.js](https://nodejs.org/)
+- Git: [Download and install Git](https://git-scm.com/)
+
+## Frontend Installation
+
+### Step 1: Clone the Repository
+Open your terminal and navigate to the directory where you want to store the frontend files. Then, execute the following command to clone the repository:
+
+```bash
+git clone <frontend-repo-url>
+```
+
+Replace `<frontend-repo-url>` with the URL of your frontend repository.
+
+### Step 2: Navigate to the Frontend Directory
+Change your current working directory to the cloned frontend directory:
+
+```bash
+cd <frontend-directory>
+```
+
+### Step 3: Install Dependencies
+Install the required dependencies for the frontend using npm. Run the following command:
+
+```bash
+npm install
+```
+
+### Step 4: Start the Frontend
+To start the frontend application, run the following command:
+
+```bash
+npm start
+```
+
+This command will launch the development server, and your frontend will be accessible in your web browser at `http://localhost:3000`.
+
+## Backend Installation
+
+### Start the Backend
+To start the backend server, run the following command:
+
+```bash
+node server.js
+```
+
+The backend server will start, and it will be accessible at `http://localhost:your-backend-port`. Replace `your-backend-port` with the port number specified in your `server.js` configuration.
+
+## Congratulations!
+You have successfully installed and started both the frontend and backend components of your application. Now you can access and interact with your application via a web browser.
+
+If you encounter any issues during the installation or have questions, please refer to the documentation or seek assistance from the project's maintainers.
 
 ## Usage
 
