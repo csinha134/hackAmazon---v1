@@ -22,7 +22,7 @@ nearby community pickup.
 
 ## Deployed Version
 
-Check out the [Deployed Version]([http://43.204.19.152:3000/]) of the project to interact with it live.
+Check out the [Deployed Version](http://43.204.19.152:3000/) of the project to interact with it live.
 
 ## Documentation (GitBook)
 
